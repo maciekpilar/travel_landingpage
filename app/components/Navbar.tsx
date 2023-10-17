@@ -45,8 +45,8 @@ const Navbar = () => {
       <div
         className={
           menuOpen
-            ? "h-screen w-screen fixed z-30 bg-white top-0 left-0 transition-all duration-300"
-            : "top-0 -left-full transition-all duration-300"
+            ? "lg:hidden h-screen w-screen fixed z-30 bg-white top-0 left-0 transition-all duration-300  ease-in-out"
+            : "lg:hidden top-0 -left-full transition-all duration-300 ease-in-out"
         }
       >
         <button
