@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       <button
-        onClick={() => handleNav}
+        onClick={handleNav}
         className="inline-block cursor-pointer lg:hidden"
       >
         <Image src="menu.svg" alt="menu" width={32} height={32} />
@@ -45,12 +45,12 @@ const Navbar = () => {
       <div
         className={
           menuOpen
-            ? "h-screen w-screen fixed z-30 bg-white top-0 left-0"
-            : "hidden -top-full -left-full"
+            ? "h-screen w-screen fixed z-30 bg-white top-0 left-0 transition-all duration-300"
+            : "hidden top-0 -left-full transition-all duration-300"
         }
       >
         <button
-          onClick={() => handleNav}
+          onClick={handleNav}
           className="text-2xl font-semibold absolute top-[20px] right-[20px] p-4"
         >
           X
@@ -61,7 +61,7 @@ const Navbar = () => {
               key={link.key}
               href={link.href}
               className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5"
-              onClick={() => handleNav}
+              onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </Link>
