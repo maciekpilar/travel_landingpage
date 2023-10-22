@@ -1,7 +1,7 @@
 ![](./readmeImg/all-devices-white.png)
 # Travel app landingpage
 
-**Live Preview: [Here](travel-landingpage-git-main-maciejs-projects-7a0c1dd9.vercel.app)**
+**Live Preview: [Here](https://travel-landingpage-git-main-maciejs-projects-7a0c1dd9.vercel.app)**
 
 Fully responsive and modern looking landingpage.
 
